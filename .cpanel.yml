@@ -5,4 +5,4 @@ deployment:
     - cd home/dragonxi/public_html
     - rm -r *
     - cd home/dragonxi/repositories/DragonX/
-    - cp home/dragonxi/repositories/DragonX $dragonxi
+    - cp home/dragonxi/repositories/DragonX/. $dragonxi
