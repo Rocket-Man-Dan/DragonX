@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export dragonxi=/home/dragonxi/public_html/
-    - /bin/cp -R /home/dragonxi/repositories/DragonX $dragonxi
+    - cd home/dragonxi/public_html
+    - rm -r *
+    - cd home/dragonxi/repositories/DragonX/
+    - cp home/dragonxi/repositories/DragonX/ $dragonxi
