@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dragonxi/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - export dragonxi=/home/public_html/
+    - /home/repositories/DragonX -R images $dragonxi
