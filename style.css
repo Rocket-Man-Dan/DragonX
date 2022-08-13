@@ -45,7 +45,7 @@
     .nav-menu-icon{
         display: block;
         margin-right: 6em;
-        margin-top: 2.5em;
+        margin-top: 3.5em;
         width: 2em;
     }
 
@@ -135,7 +135,7 @@
     }
 
     .section-header.mobile{
-        padding: 1em 10%;
+        padding: 2em 10%;
         margin-left: .5em;
         padding-bottom: 0em;
     }
@@ -149,7 +149,7 @@
     }
 
     .header-logo:hover > path{
-        fill:rgba(192, 181, 181, 0.211);
+        fill:rgb(72, 85, 99);
         stroke-width: 1px;
         stroke:white;
 
@@ -234,6 +234,7 @@
         overflow: hidden;
         background-size: 80em;
         height: initial;
+        padding-top: 2em;
     }
 
     .hero-image{
