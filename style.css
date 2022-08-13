@@ -359,12 +359,9 @@
         z-index: 0;
         margin-top: -3em;
         padding: 1em 0em;
-        border-radius: 2em;
+        border-radius: 0em;
         background-color: rgb(72, 85, 99);
         text-decoration: none;
-        border-radius: var(--radius-card);
-
-
    }
 
    .grid-item-button:hover{
@@ -384,7 +381,7 @@
         padding: 2em;
         position: relative;
         z-index: 1;
-        border-radius: var(--radius-card);
+        border-radius: 0em;
         background-color: rgb(16, 23, 34)
    }
 
