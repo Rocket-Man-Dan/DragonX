@@ -45,7 +45,7 @@
     .nav-menu-icon{
         display: block;
         margin-right: 6em;
-        margin-top: 1.5em;
+        margin-top: 2.5em;
         width: 2em;
     }
 
@@ -77,7 +77,7 @@
         right: -20em;
         height: 100em;
         width: 14em;
-        background-color: #2a2a2a;
+        background-color: rgb(16, 23, 34);
         transition: all 300ms ease-in-out;
         box-shadow:1px 0px 0px 0px rgb(123, 123, 123) inset;
     }
@@ -87,7 +87,7 @@
         grid-template-rows: auto auto;
         gap: 2em;
         margin: 0em;
-        margin-top: 6em;
+        margin-top: 8em;
         padding: 2em;
     }
 
@@ -101,17 +101,17 @@
         text-decoration: none;
         color: white;
         border-radius: var(--radius-card);
-        background: rgba(117, 110, 110, 0.188)
+        background: rgb(35, 40, 52);
     }
 
     .component-button-mobile:hover{
         font-weight: 600;
         box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
-        background: rgba(110, 100, 100, 0.445)
+        background: rgba(145, 164, 184, 0.341);
     }
 
     .header-nav{
-        background-color: rgb(19, 19, 19);
+        background-color: rgb(16, 23, 34);
         width: auto;
     }
 
@@ -119,8 +119,9 @@
         position:fixed;
         z-index: 4;
         width: 100%;
-        filter: drop-shadow(0em 2em 1em rgb(19, 19, 19));
+        box-shadow: 0px 1em 2em 1em rgb(16, 23, 34);
     }
+
 
     .section-header{
         display:flex;
@@ -128,30 +129,36 @@
         white-space: nowrap;
         margin-left: auto;
         margin-right: auto;
-        padding: 4.5em 20%;
-        backdrop-filter: blur(5px);
-        background-color: rgb(19, 19, 19);
+        padding: 2.5em 20%;
+        background-color: rgb(16, 23, 34);
         width: auto;
     }
 
     .section-header.mobile{
         padding: 1em 10%;
-        margin-left: 2.5em;
+        margin-left: .5em;
+        padding-bottom: 0em;
     }
 
     .header-logo{
         margin-right: auto;
     }
 
-    .header-logo:hover{
-        fill: black;
-        stroke-width: 8px;
+    .header-logo.mobile{
+        
+    }
+
+    .header-logo:hover > path{
+        fill:rgba(192, 181, 181, 0.211);
+        stroke-width: 1px;
         stroke:white;
+
     }
 
     .nav-buttons{
         margin: .5em .5em;
-        padding: 2.25% 3%;
+        padding-bottom: 1.5em;
+
         padding-right: 0em;
         margin-left: auto;
     }
@@ -165,14 +172,14 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        border-radius: var(--radius-card);
-        background: rgba(117, 110, 110, 0.188)
+        border-radius: var(0);
+        background: rgb(72, 85, 99, .5)
     }
 
     .component-button:hover{
         font-weight: 600;
         box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
-        background: rgba(110, 100, 100, 0.445)
+        background: rgba(72, 85, 99, 0.898)
     }
 
 /* ------- Hero Section ------- */
@@ -191,7 +198,7 @@
     .hero-download.mobile{
         width: 60%;
         padding: 1.5em 1em;
-        border-radius: 5em;
+        border-radius: 0em;
         font-size: 1.4em;
         margin-top: 5em;
     }
@@ -199,7 +206,7 @@
     .hero-small{
         display: flex;
         justify-content: center;
-        color: #878787;
+        color: rgb(145, 164, 184);
         font-size: 1em;
         text-align: center;
         font-family:'Ubuntu Mono';
@@ -215,32 +222,40 @@
         background-position-x: center;
         background-size: 2500px;
         height: 500px;
-        background-image:url("img/hush.is_hero_background.png");
-        background-color: rgb(26, 26, 26);
+        background-image:url("img/graphic_hero_background_gradient.png");
+        background-color: rgb(35, 40, 52);
         overflow: hidden;
     }
 
     .hero-background.mobile{
-        display: flexbox;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+        background-size: 80em;
+        height: initial;
     }
 
     .hero-image{
         display: block;
-        height: 500px;
+        height: 350px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         left: 50%;
-        margin-left: -1250px;
+        margin-left: -400px;
         overflow: hidden;
+        padding-top: 2em;
     }
 
     .hero-image-mobile{
-        display: inline-block;
-        width: 100%;
+        display: block;
+        width: 80%;
+        margin-top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        overflow: visible;
 
     }
 
@@ -249,7 +264,7 @@
     body{
         margin: 0em;
         padding: 0em;
-        background-color: rgb(26, 26, 26);
+        background-color: rgb(35, 40, 52);
     }
 
    .page-content{
@@ -344,17 +359,18 @@
         margin-top: -3em;
         padding: 1em 0em;
         border-radius: 2em;
-        background-color: #3e3e3e;
+        background-color: rgb(72, 85, 99);
         text-decoration: none;
-        color: white;
         border-radius: var(--radius-card);
+
 
    }
 
    .grid-item-button:hover{
         font-weight: 600;
         box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
-        background-color: #515151;
+        background-color: rgb(72, 85, 99);
+        text-decoration: none;
    }
 
    .grid-item-button-text{
@@ -368,7 +384,7 @@
         position: relative;
         z-index: 1;
         border-radius: var(--radius-card);
-        background-color: #262626;
+        background-color: rgb(16, 23, 34)
    }
 
    .grid-item-screenshot{
@@ -388,18 +404,18 @@
 /* ------- Dividers ------- */
 
    .divider{
-       background-image: url(img/HUSH_website_divider_pattern.png);
+       background-image: url(img/graphic_divider_dragonx.png);
        background-repeat: repeat-x;
        background-position-x: center;
        background-position-y: center;
        background-size: 1200px;
-       height: 400px;
+       height: 100px;
        background-color: rgb(26, 26, 26);
    }
 
    .divider.mobile{
         background-size: 900px;
-        height: 200px;
+        height: 80px;
    }
 
 
@@ -544,11 +560,13 @@
 
     p.grid-item-desc{
         text-align: left;
-        color: #a8a8a8;
+        color: rgb(145, 164, 184);
     }
 
     p.grid-item-button-text{
         text-align: center;
+        color: rgb(248, 255, 255);
+        text-decoration: none;
     }
 
     p.footer-tagline{
@@ -646,6 +664,9 @@
         display: none;
     }
     .filler{
+        display: none;
+    }
+    .hero-background.mobile{
         display: none;
     }
 }
